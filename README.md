@@ -6,5 +6,5 @@
 Система управління відкрітими данними "Робін" - це університетський командний проект по предмету "Бази данних"
 
 ### Команда
-Лепейко Евген Володимирович [lepeicobb@gmail.com](mailto:lepeicobb@gmail.com)
+Лепейко Евген Володимирович [lepeicobb@gmail.com](mailto:lepeicobb@gmail.com)\
 Черевач Анатолій Миколайович [anatoliycherevach@gmail.com](mailto:anatoliycherevach@gmail.com)
