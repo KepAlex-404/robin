@@ -7,4 +7,5 @@
 
 ### Команда
 Лепейко Евген Володимирович [lepeicobb@gmail.com](mailto:lepeicobb@gmail.com)\
-Черевач Анатолій Миколайович [anatoliycherevach@gmail.com](mailto:anatoliycherevach@gmail.com)
+Черевач Анатолій Миколайович [anatoliycherevach@gmail.com](mailto:anatoliycherevach@gmail.com)\
+Лукашук Никита Сергеевич [nikitalukash56@gmail.com](mailto:nikitalukash56@gmail.com) 
