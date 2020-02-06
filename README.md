@@ -8,4 +8,5 @@
 ### Команда
 Лепейко Евген Володимирович [lepeicobb@gmail.com](mailto:lepeicobb@gmail.com)\
 Черевач Анатолій Миколайович [anatoliycherevach@gmail.com](mailto:anatoliycherevach@gmail.com)\
-Лукашук Никита Сергеевич [nikitalukash56@gmail.com](mailto:nikitalukash56@gmail.com) 
+Лукашук Никита Сергеевич [nikitalukash56@gmail.com](mailto:nikitalukash56@gmail.com)\
+Стародубець Ілля Стародубець [mrqillp@gmail.com](mailto:mrqillp@gmail.com)
