@@ -7,7 +7,12 @@
   "author": "Eugene Lepeico <03006jeka@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "apollo-server-koa": "^2.10.0",
     "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "metalog": "^2.0.0",
+    "mongoose": "^5.8.11",
     "mysql": "^2.18.1"
   }
 }
