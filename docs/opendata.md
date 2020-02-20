@@ -236,6 +236,8 @@ Young Europeans: використовує відкриті дані від Euros
 
 ## Першоджерела:
 
+[Що таке відкриті дані](http://most.ks.ua/news/url/vidkriti_dani_angl_open_data)
+
 [Wikipedia, Набір Даних](https://uk.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B1%D1%96%D1%80_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
 
 [Метадані - це Визначення, види та варіанти використання метаданих у прикладному програмуванні](http://hi-news.pp.ua/tehnka-tehnologyi/7373-metadan-ce-viznachennya-vidi-ta-varanti-vikoristannya-metadanih-u-prikladnomu-programuvann.html)
