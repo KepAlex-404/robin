@@ -8,29 +8,29 @@ const initMongo = logger => mongoUrl => {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }).catch(e => {
-		logger.error(e.toString());
-	});
+    logger.error(e.toString());
+  });
 
   mongoose.connection.once('open', () => {
     logger.db('Connected to Mongo');
-	});
+  });
 
-	return mongoose;
+  return mongoose;
 };
 
 const initMySQL = logger => mysqlConfig => {
-	const pool = mysql.createPool(mysqlConfig);
+  const pool = mysql.createPool(mysqlConfig);
 
-	pool.getConnection(e => {
-		e ?
-			logger.error('MySQL ' + e.toString()) :
-			logger.db('Connected to MySQL');
-	});
+  pool.getConnection(e => {
+    e ?
+      logger.error('MySQL ' + e.toString()) :
+      logger.db('Connected to MySQL');
+  });
 
-	return pool;
-}
+  return pool;
+};
 
 module.exports = logger => ({
-	initMongo: initMongo(logger),
-	initMySQL: initMySQL(logger),
+  initMongo: initMongo(logger),
+  initMySQL: initMySQL(logger),
 });

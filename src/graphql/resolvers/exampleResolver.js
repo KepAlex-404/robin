@@ -1,14 +1,13 @@
-const jwt = require('jsonwebtoken');
 const { AuthenticationError, UserInputError } = require('apollo-server-koa');
 
 module.exports = {
   Query: {
-    example: async (parent, { id }, { models: { exampleModel }, me }, info) => {
+    example: async (parent, { id }, { models: { exampleModel }, me }) => {
       if (!me) {
         throw new AuthenticationError('You are not authenticated');
       }
       const example = await exampleModel
-        .findById({ _id: id })
+        .findById({ _id: id });
       return example;
     },
   },
@@ -17,8 +16,7 @@ module.exports = {
     createExample: async (
       parent,
       { exampleData },
-      { models: { exampleModel } },
-      info
+      { models: { exampleModel } }
     ) => {
       let found = await exampleModel.findOne({ exampleData });
       if (found) {
@@ -33,5 +31,5 @@ module.exports = {
       });
       return found;
     },
-	}
+  }
 };
