@@ -134,9 +134,7 @@
  Программное обеспечение Postgre (Windows/Linux)
  Программное обеспечение React (Windows/Linux)
  Программное обеспечение Apollo graphql (Windows/Linux)
-  
-#### 7.2  <a name="techrules-2"> Конфигурація програмного забезпечення</a>
-  ///
+
   
 
 
