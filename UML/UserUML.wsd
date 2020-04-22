@@ -1,0 +1,53 @@
+@startuml UserUML
+left header
+<font color=000 size=16><b>ID:</b> UC_2
+<font color=000 size=16><b>Назва:</b> Взаємодія з програмою  залогованого користувача
+<font color=000 size=16><b>Учасники:</b> Користувач, Програма
+<font color=000 size=16><b>Передумови:</b> Користувач бажає здійснити взаємодію з програмою
+<font color=000 size=16><b>Результат:</b> Внесення змін у базі
+<font color=000 size=16><b>Основний сценарій:</b>
+end header
+
+left to right direction
+skinparam packageStyle rectangle
+actor User
+actor Database
+skinparam BackgroundColor Bisque
+skinparam ArrowFontName Colibri
+skinparam UsecaseBorderThickness 3
+skinparam UsecaseFontSize 15
+skinparam PackageFontStyle italic
+skinparam packageStyle rectangle
+skinparam UsecaseFontName Times New Roman
+rectangle Robin{
+  usecase UC1 as " <b>Редагувати власний профіль
+  --
+  Редагувати пароль
+  Редагувати ім'я
+  Видалити профіль
+  "
+  User -- UC1
+  UC1 ..> (Надіслати запит):include
+  (Надіслати запит) -> Database
+
+  User -- (Переглянути дані з бази) 
+  (Отримати повідомлення про помилку) .> User:extend
+  (Переглянути дані з бази) -- Database
+  usecase UC2 as " <b> Редагувати власну базу даних
+  --
+  Створити нову
+  Видалити існуючу
+  Ввести нові дані
+  "
+  User - UC2 
+  UC2 ..> (Надіслати запит ):include
+  (Надіслати запит ) -> Database
+  
+
+
+
+
+
+}
+
+@enduml
