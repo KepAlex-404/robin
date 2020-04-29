@@ -1,0 +1,51 @@
+@startuml ER-model
+
+skinparam monochrome true
+skinparam	shadowing false
+
+title
+  <font size=14 color=black>
+	<b>Robin ODMS
+	ER-модель
+end title
+
+entity "<b>Open Data" as Data {
+	data_id
+	--
+	**desciption**
+	address
+}
+
+entity "<b>Owner" as Owner {
+	owner_id
+	--
+	**desciption**
+}
+
+entity "<b>Service" as Service {
+	service_id
+	--
+	**desciption**
+	rights
+}
+
+entity "<b>Developer" as Developer {
+	developer_id
+	--
+	**desciption**
+}
+
+entity "<b>Trace" as Trace {
+	trace_id
+	--
+	date
+	manipulation_type
+	<i>from_service
+}
+
+Data }|--o{ Owner
+Data }o--|| Service
+Data }o--o{ Trace
+Service ||--|{ Developer
+
+@enduml
