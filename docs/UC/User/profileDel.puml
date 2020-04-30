@@ -1,0 +1,54 @@
+@startuml DeleteAction
+left header
+<font color=000 size=18><b>Package:</b> User
+<font color=000 size=16><b>ID:</b> profileDelete
+<font color=000 size=16><b>Назва:</b> Видалення власного профілю
+<font color=000 size=16><b>Учасники:</b> Користувач, Система
+<font color=000 size=16><b>Передумови:</b> Користувач бажає видалити власний профіль
+<font color=000 size=16><b>Результат:</b> Видалення власного профілю
+<font color=000 size=16><b>Виключні ситуації:</b>
+<font color=000 size=16>EX_00: Некоректний запит
+<font color=000 size=16>EX_01: Не має доступу до бази даних
+<font color=000 size=16>EX_02: Скасування операції
+
+
+<font color=000 size=16><b>Основний сценарій:</b>
+end header
+
+skinparam	shadowing false
+skinparam Note {
+	BackgroundColor #f85658
+	FontColor #ffffff
+}
+
+|Користувач|
+start
+: Надсилає запит на видалення власного профілю ;
+note left
+Можливо ЕХ_00
+end note
+
+|Система|
+: Оброблює запит;
+
+|Система|
+:Надсилає форму для підтвердження рішення користувача;
+
+|Користувач|
+:Підтверджує видалення;
+note left
+Можливо ЕХ_02
+end note
+
+|Система|
+:Надсилає запит на зміну до загальної бази;
+note right
+Можливо ЕХ_01
+end note
+
+:Надсилає повідомлення про видалення OD;
+
+|Користувач|
+:Отримує повідомлення про вдале закінчення операції видалення;
+stop
+@enduml

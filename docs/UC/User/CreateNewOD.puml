@@ -1,0 +1,62 @@
+@startuml PersonalOD
+
+skinparam	shadowing false
+skinparam Note {
+	BackgroundColor #f85658
+	FontColor #ffffff
+}
+left header
+<font color=000 size=18><b>Package:</b> User
+<font color=000 size=16><b>ID:</b> PersonalOD
+<font color=000 size=16><b>Назва:</b> Створення OD користувача
+<font color=000 size=16><b>Учасники:</b> Користувач, Система
+<font color=000 size=16><b>Передумови:</b> Користувач бажає створити власну OD
+<font color=000 size=16><b>Результат:</b> Додавання його OD до загальної бази
+<font color=000 size=16><b>Виключні ситуації:</b>
+<font color=000 size=16>EX_00: Некоректний запит
+<font color=000 size=16>EX_01: Доступ до бази даних відсутній
+<font color=000 size=16>EX_02: Некоректно введені дані
+<font color=000 size=16>EX_03: Існує OD з такою назвою
+<font color=000 size=16><b>Основний сценарій:</b>
+
+end header
+
+|Користувач|
+start
+:Вводить запит на створення нової OD;
+note left
+	Моживо ЕХ_00
+end note
+
+|Система|
+:Оброблює запит на створення;
+note right
+	Моживо ЕХ_00
+end note
+
+|Система|
+:Надсидає форму для заповненя;
+
+|Користувач|
+:Заповнює та надсилає форму;
+note left
+	Моживо ЕХ_02
+
+end note
+
+|Система|
+:Оброблює форму на створення;
+: Надсилає запит  на створення OD користувача до загальної бази;
+note right
+	Моживо ЕХ_01
+end note
+
+|Користувач|
+:Отримує повідомлення про створення власної OD;
+note left
+Можливо ЕХ_03
+end note
+
+stop;
+
+@enduml
