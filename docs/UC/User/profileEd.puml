@@ -10,7 +10,7 @@ left header
 <font color=000 size=16><b>Виключні ситуації:</b>
 <font color=000 size=16>EX_00: Некоректний запит
 <font color=000 size=16>EX_01: Доступ до бази даних відсутній
-<font color=000 size=16>EX_02: Не коректно введені дані
+<font color=000 size=16>EX_02: Некоректно введені дані
 <font color=000 size=16><b>Основний сценарій:</b>
 end header
 
