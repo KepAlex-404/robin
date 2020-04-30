@@ -12,27 +12,27 @@ end title
 entity "<b>Open Data" as Data {
 	data_id
 	--
-	**desciption**
+	**description**
 	address
 }
 
 entity "<b>Owner" as Owner {
 	owner_id
 	--
-	**desciption**
+	**description**
 }
 
 entity "<b>Service" as Service {
 	service_id
 	--
-	**desciption**
+	**description**
 	rights
 }
 
 entity "<b>Developer" as Developer {
 	developer_id
 	--
-	**desciption**
+	**description**
 }
 
 entity "<b>Trace" as Trace {
