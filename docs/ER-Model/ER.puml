@@ -12,40 +12,64 @@ end title
 entity "<b>Open Data" as Data {
 	data_id
 	--
-	**description**
 	address
+	--
+	data_type
+	data_title
+	description
+	version
+	--
+	used_by
+	total_rows
+	issues
+	--
+	first_publish
+	last_publish
+}
+
+entity "<b>User" as User {
+	user_id
+	--
+	status
+	name
+	display_name
+	email
+	password
+	--
+	is_pro
+	--
+	created_at
+	updated_at
 }
 
 entity "<b>Owner" as Owner {
-	owner_id
+	ownership_type
 	--
-	**description**
+	promoted_by
+	promoted_at
 }
 
 entity "<b>Service" as Service {
 	service_id
 	--
-	**description**
-	rights
-}
-
-entity "<b>Developer" as Developer {
-	developer_id
+	name
+	description
 	--
-	**description**
+	created_at
+	updated_at
 }
 
-entity "<b>Trace" as Trace {
-	trace_id
+entity "<b>Develop" as Develop {
+	developer_type
 	--
-	date
-	manipulation_type
-	<i>from_service
+	promoted_by
+	promoted_at
 }
 
-Data }|--o{ Owner
-Data }o--|| Service
-Data }o--o{ Trace
-Service ||--|{ Developer
+Data -- Owner
+Data -- Service
+Service -- Develop
+User -- Owner
+User -- Develop
 
 @enduml
