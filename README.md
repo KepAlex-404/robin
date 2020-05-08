@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://robin-dms.now.sh/" target="blank"><img src="./assets/readme-header.png"/></a>
+  <a href="https://getrobin.now.sh/" target="blank"><img src="./assets/readme-header.png"/></a>
 </p>
 
 <p align="center">
@@ -40,7 +40,7 @@ $ yarn test:cov
 
 ## Support
 
-ROBIN is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://robin-dms.now.sh/support).
+ROBIN is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://getrobin.now.sh/support).
 
 ## Stay in touch
 
@@ -50,7 +50,7 @@ ROBIN is an MIT-licensed open source project. It can grow thanks to the sponsors
   - Лукашук Никита Сергеевич [nikitalukash56@gmail.com](mailto:nikitalukash56@gmail.com)
   - Стародубець Ілля Стародубець [mrqillp@gmail.com](mailto:mrqillp@gmail.com)
   - Васильев Георгий Зиновьевич [georgevasilyev2000@gmail.com](mailto:georgevasilyev2000@gmail.com)
-- Website - [ROBIN-DMS.now.sh](https://robin-dms.now.sh/)
+- Website - [getrobin.now.sh](https://getrobin.now.sh/)
 
 ## License
 
