@@ -2,7 +2,8 @@ import {
   PrimaryGeneratedColumn,
   Column,
   UpdateDateColumn,
-  CreateDateColumn,
+	CreateDateColumn,
+	OneToOne
 } from 'typeorm';
 
-export abstract class UserEntity {}
+export abstract class DevelopEntity {}
